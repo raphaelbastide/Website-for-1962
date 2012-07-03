@@ -56,7 +56,7 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 			}));
 			$last_img = $imgs[count($imgs)-1];
 			?>
-			<img src="img/<?php echo $last_img; ?>" alt="" />
+			<img src="img/<?php echo $last_img; ?>" alt="Photograph" />
 			<div class="caption">v<?php echo filename_to_tag($last_img); ?></div>
 		</div>
 	</div>
@@ -68,7 +68,8 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 				// In archives, we want to (not)load all the images, it will be loaded using JavaScript
 				foreach($imgs as $img): ?>
 				<div class="imgbox">
-					<img data-src="img/<?php echo $img; ?>" alt="" />
+					<!--<img data-src="img/<?php echo $img; ?>" alt="" />-->
+					<img src="img/<?php echo $img; ?>" alt="" />
 					<div class="caption">v<?php echo filename_to_tag($img); ?></div>
 				</div>
 				<?php endforeach; ?>

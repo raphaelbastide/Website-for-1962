@@ -6,4 +6,6 @@ If you are looking for the art piece 1962, please go to the [dedicated repositor
 
 ## About
 
+Made possible thank to [Pierre Bertet](https://github.com/bpierre/).
+
 This project is under [MIT LICENSE](http://raphael.mit-license.org/).

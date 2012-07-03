@@ -120,9 +120,11 @@ a:hover{text-decoration:none;}
 	font-size: 0.8em;
     line-height: 1.4em;
 }
+/*
 #archives #inner{
 	display:none;
 }
+*/
 #archives .imgbox{
 	width:200px;
 	height:299px;
