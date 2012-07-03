@@ -2,9 +2,6 @@
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/lib.php';
 
-error_reporting(E_ALL);
-ini_set('display_errors', 'On');
-
 function forbidden() {
   header('HTTP/1.1 403 Forbidden');
   exit;
