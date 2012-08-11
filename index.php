@@ -21,7 +21,7 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 	<link rel="stylesheet" media="all" href="css/main.css">
 	<link rel="stylesheet" type="text/css" media="print" href="css/print.css" />	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 	<link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'></head>
-<body>
+	<link href="https://github.com/raphaelbastide/1962/commits/master.atom" rel="alternate" title="Recent Commits to 1962" type="application/atom+xml" /><body>
 	<?php
 
 	?>
@@ -56,7 +56,7 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 			}));
 			$last_img = $imgs[count($imgs)-1];
 			?>
-			<img src="img/<?php echo $last_img; ?>" alt="Photograph" />
+			<img src="img/<?php echo $last_img; ?>" alt="Photograph" width="800"/>
 			<div class="caption">v<?php echo filename_to_tag($last_img); ?></div>
 		</div>
 	</div>
@@ -69,7 +69,7 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 				foreach($imgs as $img): ?>
 				<div class="imgbox">
 					<!--<img data-src="img/<?php echo $img; ?>" alt="" />-->
-					<img src="img/<?php echo $img; ?>" alt="" />
+					<img src="img/<?php echo $img; ?>" alt="" width="800" />
 					<div class="caption">v<?php echo filename_to_tag($img); ?></div>
 				</div>
 				<?php endforeach; ?>

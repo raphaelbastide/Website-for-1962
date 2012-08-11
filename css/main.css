@@ -133,6 +133,7 @@ a:hover{text-decoration:none;}
 }
 #archives img{
 	width:200px;
+	height:auto;
 }
 .caption{
 	font-family:AnkaHackerRegular,Anka Hacker, cousine, monospace;
