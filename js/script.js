@@ -28,7 +28,9 @@ function drawtree() {
 	jsPlumb.connect({ source:"v0_7", target:"v0_7_b", anchors: connectR});
 	jsPlumb.connect({ source:"v0_7", target:"v0_8"});
 	jsPlumb.connect({ source:"v0_8", target:"v0_8_1"});
-	jsPlumb.connect({ source:"v0_8_1", target:"v0_8_2", anchors: connectR});
+	jsPlumb.connect({ source:"v0_8_1", target:"v0_8_c", anchors: connectR});
+	jsPlumb.connect({ source:"v0_8_1", target:"v0_9",});
+	jsPlumb.connect({ source:"v0_9", target:"v0_9_i", anchors: connectR});
 }
 
 jsPlumb.bind("ready", function() {
@@ -58,12 +60,12 @@ $window.resize($.throttle(10, function(){
 $("#view").fracs("outline", {
 	crop: true,
 	viewportStyle: {
-		fillStyle: 'rgba(249,250,255,0.3)'
+		fillStyle: 'rgba(255,250,0,0.2)'
 		// strokeWidth: 10,
 		// strokeStyle: 'black'
 	},
 	viewportDragStyle: {
-		fillStyle: 'rgba(249,250,255,0.5)'
+		fillStyle: 'rgba(255,255,0,0.3)'
 	},
 	styles: [
 		{

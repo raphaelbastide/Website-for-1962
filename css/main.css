@@ -1,9 +1,15 @@
 html{height:100%;color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;} button { background: none; border: none; margin: 0; padding: 0; width: auto; overflow: visible; line-height:inherit;}button::-moz-focus-inner{padding:0;border:0;}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 body{
 	font-family:"Karmilla", arial, sans-serif;
 	margin:0;
-	font-size:18px;
 }
 header{
 	position:fixed;
@@ -11,24 +17,26 @@ header{
 	left:0px;
 	z-index:5;
 	width:150px;
-	background:#ddd;
+	background:#DDE0E3;
 }
 .titles{
 	margin:10px;
 }
-header #view{
+header #viewbox{
 	clear:both;
+	position:relative;
 }
-body.textboxes #view, body.textboxes #tree{
+body.textboxes #viewbox, body.textboxes #tree{
 	visibility:hidden;
 }
 body.textboxes{
 	overflow-y:hidden;
 }
 .caption{
-	font-family:AnkaHackerRegular,Anka Hacker, cousine, monospace;
-	font-size:12px;
+	font-family:"source_code_pro", courier new, monospace;
+	font-size:13px;
 	list-style-type:none;
+	line-height:16px;
 	margin:10px 0 0 0;
 	padding:7px 9px 12px 9px;
 	border:1px solid black;
@@ -39,6 +47,8 @@ body.textboxes{
 #textboxes{
 	position:fixed;
 	overflow-y:scroll;
+	padding:0px 0 0 200px;
+	margin:0 0 50px 0;
 	top:0px;
 	left:0px;
 	width:100%;
@@ -48,14 +58,9 @@ body.textboxes{
 }
 .textbox{
 	width:100%;
-	max-width:800px;
-	padding:0 0 0 200px;
+	max-width:550px;
 }
 footer{
-	clear:both;
-	margin-top:30px;
-	font-size:12px;
-	padding:10px 0 20px 0;
 }
 .vbox{
 	width:200px;
@@ -65,17 +70,19 @@ footer{
 	display:block;
 	width:200px;
 	height:300px;
-	background:#ddd;
+	background:#DDE0E3;
+	font-family:"source_code_pro", courier new, monospace;
+	font-size:12px;
+	color:#777;
 }
-.branch1{
+.vbox.branch1{
 	position:relative;
-	left:40%;
+	left:35%;
 	margin:0 0 -300px 0;
 }
 ._jsPlumb_connector {
 	z-index:1;
 }
-
 
 /* Fake Radio in header */
 header button.textboxes{
@@ -83,83 +90,90 @@ header button.textboxes{
 	display:block;
 	float:left;
 	height:20px;
-	margin:5px 0 10px;
+	margin:10px 0 15px;
 	font-weight:bold;
 	cursor:pointer;
 	position:relative;
 }
+header button.textboxes:hover{
+	color:#777;
+}
 header button.textboxes:before{
 	content:"";
 	background:white;
-	width:14px;
-	height:14px;
-	margin:3px 6px 0 0;
+	border:3px solid white;
+	width:7px;
+	height:7px;
+	margin:4px 6px 0 0;
 	display:block;
 	float:left;
 }
-header button.textboxes:after{
-	position:absolute;
-	content:"";
-	background:black;
-	width:7px;
-	height:7px;
-	top:6px;
-	left:4px;
-	display:none;
+body.textboxes header button.textboxes:before{
+	background:#333;
 }
-body.textboxes header button.textboxes:after{
-	display:block;
+#viewbox:after{
+	color: #888;
+	content: "▲ ' t i m e";
+	display: block;
+	font-family: "source_code_pro",courier new,monospace;
+	font-size: 10px;
+	font-weight:bold;
+	line-height: 10px;
+	position: absolute;
+	left: 6px;
+	bottom: 15px;
+	text-transform: uppercase;
+	width: 8px;
+	z-index: 300;
 }
-
 /* Typography */
-header h1{
-	font-size:25px;
-	margin:0;
+body{
+	font-size:16px;
+}
+h1{
+	font-size:18px;
 }
 header h2{
 	font-size:12px;
 	margin:0;
 	font-weight:normal;
+	font-family:"source_code_pro", courier new, monospace;
+	line-height:13px;
 }
 h1, h2, h3, h4{
 	font-weight:bold;
-	margin:0;
-}
-h1{
-	font-size:45px;
-	margin:0 0 40px 0;
-}
-h2{
-	font-size:25px;
-	margin:35px 0 10px 0;
-}
-h3{
-	font-size:18px;
-	margin:35px 0 10px 0;
+	margin:20px 0 2px 0;
 }
 p{
 	margin:0 0 10px 0;
 }
-a{
+a:hover{
+	color:#555;
+	text-decoration:none;
+}
+a, a:active{
 	color:black;
 }
 pre{
-	font-family:AnkaHackerRegular,Anka Hacker, cousine, monospace;
+	font-family:"source_code_pro", courier new, monospace;
 	font-size:15px;
 	line-height:21px;
 	letter-spacing:1px;
 }
 .readme ol,.readme ul{
 	list-style-type:decimal;
-	padding:0 0 0 60px;
+	padding:0 0 0 40px;
 	margin:0 0 10px 0;
 }
 .piece pre{
-	background:#F1F6F3;
+	background:#FBFAD9;
 	white-space: pre-wrap;
-	font-size: 0.8em;
 	line-height: 1.4em;
+	padding:7px 10px;
 }
+
+/* Fonts */
+
 @font-face {
 	font-family: 'AnkaHackerRegular';
 	src: url('font/ankahacker-r.eot');
@@ -190,5 +204,26 @@ pre{
 		url('font/karmilla-bold-009-webfont.svg#karmillabold') format('svg');
 	font-weight: bold;
 	font-style: normal;
+}
 
+@font-face {
+	font-family: 'source_code_pro';
+	src: url('font/sourcecodepro-regular-webfont.eot');
+	src: url('font/sourcecodepro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('font/sourcecodepro-regular-webfont.woff') format('woff'),
+		url('font/sourcecodepro-regular-webfont.ttf') format('truetype'),
+		url('font/sourcecodepro-regular-webfont.svg#source_code_proregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'source_code_pro';
+	src: url('sourcecodepro-semibold-webfont.eot');
+	src: url('sourcecodepro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('font/sourcecodepro-semibold-webfont.woff') format('woff'),
+		url('font/sourcecodepro-semibold-webfont.ttf') format('truetype'),
+		url('font/sourcecodepro-semibold-webfont.svg#source_code_prosemibold') format('svg');
+	font-weight: bold;
+	font-style: normal;
 }
