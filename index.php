@@ -16,70 +16,132 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>1962 — Versioned physical sculpture</title>
-	<meta name="description" content="">
+	<title>1962 — Versioned physical sculptures</title>
+	<meta name="description" content="1962 is a group physical sculptures based on Git and initiated by Raphaël Bastide">
 	<link rel="stylesheet" media="all" href="css/main.css">
-	<link rel="stylesheet" type="text/css" media="print" href="css/print.css" />	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-	<link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'></head>
-	<link href="https://github.com/raphaelbastide/1962/commits/master.atom" rel="alternate" title="Recent Commits to 1962" type="application/atom+xml" /><body>
-	<?php
-
-	?>
-	<div id="content">
-		<div id="colA">
-			<ul id="menu">
-				<li><a id="fork" href="https://github.com/raphaelbastide/1962">Fork</a></li>
-				<li><a id="archives-link" href="#archives">Archives</a></li>
-				<li><a class="top" href="#content">⬆</a></li>
-			</ul>
-			<div id="readme">
-				<?php echo markdown($readme); ?>
-			</div>
-			<div class="page-break"></div>
-			<div id="piece">
-				<h2>Current state of the PIECE file</h2>
-				<pre><?php echo markdown($piece); ?></pre>
-			</div>
-			<div id="contributors">
-				<h2>Contributors</h2>
-				<pre><?php echo $contributors ?></pre>
-			</div>
+	<link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+	<link href="https://github.com/raphaelbastide/1962/commits/master.atom" rel="alternate" title="Recent commits for 1962" type="application/atom+xml" /><body>
+	<header>
+		<div class="titles">
+			<h1>1962</h1>
+			<h2>Versioned physical sculptures</h2>
+			<nav role="navigation" class="menu">
+				<button class="textboxes">Text</button>
+			</nav>
 		</div>
-		<div id="colB">
-			<?php
-			function filename_to_tag($filename) {
-				return preg_replace(array('/_/', '/.jpg/'), array('.', ''), $filename);
-			}
-			$imgs = scandir(__DIR__ .'/img');
-			$imgs = array_values(array_filter($imgs, function($img) {
-				return $img !== '.' && $img !== '..';
-			}));
-			$last_img = $imgs[count($imgs)-1];
-			?>
-			<img src="img/<?php echo $last_img; ?>" alt="Photograph" width="800"/>
-			<div class="caption">v<?php echo filename_to_tag($last_img); ?></div>
+		<canvas id="view" width="150" height="800"></canvas>
+	</header>
+	<div class="main-content">
+	<div class="page-break"></div>
+	<div id="tree" class="contentbox">
+		<div class="inner">
+			<div class="vbox branch1" id="v0_8_2">
+				<img width="200" title="1962 v0_8_2" alt="1962 v0_8_2" src="img/0_8_2.jpg" />
+				<p class="caption">v0.8.2<br/>(coming soon in <a href="http://www.cig-chaumont.com/fr/cig/page/festival-international-de-laffiche-et-du-graphisme/expositions/panorama">Chaumont</a>)</p>
+			</div>
+			<div class="vbox" id="v0_8_1">
+				<img width="200" title="1962 v0_8_1" alt="1962 v0_8_1" src="img/0_8_1.jpg" />
+				<ul class="caption">
+					<li class="version">version: 0.8.1</li>
+					<li class="version">date: 2013-02-19</li>
+					<li class="version">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.8.1">on GitHub</a></li>
+				</ul>
+			</div>
+			<div class="vbox" id="v0_8">
+				<img width="200" title="1962 v0.8" alt="1962 v0.8" src="img/0_8.jpg" />
+				<ul class="caption">
+					<li class="version">version: 0.8</li>
+					<li class="version">date: 2013-01-26</li>
+					<li class="version">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.8">on GitHub</a></li>
+				</ul>
+			</div>
+			<div class="vbox branch1" id="v0_7_b">
+				<img width="200" title="1962 v0_7_brussels-2013" alt="1962 v0_7_brussels-2013" src="img/0_7_brussels-2013.jpg" />
+				<ul class="caption">
+					<li class="version">version: v0.7.brussels-2013</li>
+					<li class="version">date: 2013-02-28</li>
+					<li class="version">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.7.brussels-2013">on GitHub</a></li>
+				</ul>
+			</div>
+			<div class="vbox" id="v0_7">
+				<img width="200" title="1962 v0.7" alt="1962 v0.7" src="img/0_7.jpg" />
+				<ul class="caption">
+					<li class="version">version: 0.7</li>
+					<li class="version">date: 2012-08-08</li>
+					<li class="version">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.7">on GitHub</a></li>
+				</ul>
+			</div>
+			<div class="vbox" id="v0_6">
+				<img width="200" title="1962 v0.6" alt="1962 v0.6" src="img/0_6.jpg" />
+				<ul class="caption">
+					<li class="version">version: 0.6</li>
+					<li class="version">date: 2012-07-12</li>
+					<li class="version">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.6">on GitHub</a></li>
+				</ul>
+			</div>
+			<div class="vbox" id="v0_5">
+				<img width="200" title="1962 v0.5" alt="1962 v0.5" src="img/0_5.jpg" />
+				<ul class="caption">
+					<li class="version">version: 0.5</li>
+					<li class="version">date: 2012-07-03</li>
+					<li class="version">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.5">on GitHub</a></li>
+				</ul>
+			</div>
+			<div class="vbox" id="v0_4">
+				<img width="200" title="1962 v0.4" alt="1962 v0.4" src="img/0_4.jpg" />
+				<ul class="caption">
+					<li class="version">version: 0.4</li>
+					<li class="version">date: 2012-06-08</li>
+					<li class="version">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.4">on GitHub</a></li>
+				</ul>
+			</div>
+			<div class="vbox" id="v0_3">
+				<img width="200" title="1962 v0.1" alt="1962 v0.3" src="img/0_3.jpg" />
+				<ul class="caption">
+					<li class="version">version: 0.3</li>
+					<li class="version">date: 2012-05-24</li>
+					<li class="version">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.3">on GitHub</a></li>
+				</ul>
+			</div>
+			<div class="vbox" id="v0_2">
+				<img width="200" title="1962 v0.2" alt="1962 v0.2" src="img/0_2.jpg" />
+				<ul class="caption">
+					<li class="version">version: 0.2</li>
+					<li class="version">date: 2012-05-18</li>
+					<li class="version">code: <a href="https://github.com/raphaelbastide/1962/tree/0.2">on GitHub</a></li>
+				</ul>
+			</div>
+			<div class="vbox" id="v0_1">
+				<img width="200" title="1962 v0.1" alt="1962 v0.1" src="img/0_1.jpg" />
+				<ul class="caption">
+					<li class="version">version: 0.1</li>
+					<li class="version">date: 2012-04-17</li>
+					<li class="version">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.1">on GitHub</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<div class="page-break"></div>
-	<div id="archives" >
-		<div id="inner">
-			<h2>Archives</h2>
-				<?php
-				// In archives, we want to (not)load all the images, it will be loaded using JavaScript
-				foreach($imgs as $img): ?>
-				<div class="imgbox">
-					<!--<img data-src="img/<?php echo $img; ?>" alt="" />-->
-					<img src="img/<?php echo $img; ?>" alt="" width="800" />
-					<div class="caption">v<?php echo filename_to_tag($img); ?></div>
-				</div>
-				<?php endforeach; ?>
+	<div id="textboxes" class="contentbox">
+		<div class="readme textbox">
+			<?php echo markdown($readme); ?>
+		</div>
+		<div class="piece textbox">
+			<h2>Current state of the PIECE file</h2>
+			<pre><?php echo markdown($piece); ?></pre>
+		</div>
+		<div class="contributors textbox">
+			<h2>Contributors</h2>
+			<pre><?php echo $contributors ?></pre>
 		</div>
 	</div>
-	<footer>
-	This web page is synchronized with the <a href="https://github.com/<?php echo GITHUB_USER ?>/<?php echo GITHUB_REPO ?>">1962 GitHub repository</a>. The source of this website is <a href="https://github.com/raphaelbastide/Website-for-1962/">public and open source</a>.
-	</footer>
-	<script src="js/libs/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/libs/jquery.history.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/libs/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/libs/jquery-migrate-1.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/libs/jquery.jsPlumb-1.4.0-all-min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/libs/jquery.ba-throttle-debounce.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/libs/jquery.fracs-0.11.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/libs/jquery.outline-0.11.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 	  var _gaq = _gaq || [];
