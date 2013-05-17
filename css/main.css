@@ -83,7 +83,20 @@ footer{
 ._jsPlumb_connector {
 	z-index:1;
 }
-
+.frame{
+	position:fixed;
+	top:0;
+	left:150px;
+}
+.olive-large:after{
+	content:"✕";
+	position:absolute;
+	right:0;
+	top:0;
+	font-size:40px;
+	line-height:25px;
+	cursor:pointer;
+}
 /* Fake Radio in header */
 header button.textboxes{
 	font-size:17px;

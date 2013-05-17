@@ -162,6 +162,7 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 			Typefaces: <a href="https://github.com/ms-studio/karmilla">Karmilla</a>, <a href="https://github.com/adobe/source-code-pro">Source Code Pro</a></p>
 		</footer>
 	</div>
+	<div class="frame"></div>
 	<script src="js/libs/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/libs/jquery-migrate-1.2.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/libs/jquery.jsPlumb-1.4.0-all-min.js" type="text/javascript" charset="utf-8"></script>

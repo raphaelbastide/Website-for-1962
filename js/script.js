@@ -48,13 +48,34 @@ $('nav button').click(function(e){
 	pid.toggle();
 });
 
+// Images
+var bigImg = $('<div class="olive-large" />'),
+	imgFrame;
+
+$('.vbox img').click(function(e){
+    $this = $(this);
+	if (imgFrame) {
+		imgFrame.css('z-index', '1');
+	}
+	imgFrame = $('.frame');
+	imgFrame.css('z-index', '6');
+	bigImg.appendTo(imgFrame);
+	bigImg.html('<img width="auto" height="auto" src="'+ this.src +'" />');
+	bigImg.show();
+	$window.resize();
+});
+bigImg.click(function(){
+	bigImg.hide();
+});
+
+
 // Uses jQuery.fracs
-var $window = $(window);
 $window.resize($.throttle(10, function(){
 	var wh = $window.height();
   jsPlumb.repaintEverything();
 	$('#textboxes').css('height', wh);
 	$('header').css('height', wh);
+	$('.olive-large img').css('height', wh)
 })).resize();  
 
 $("#view").fracs("outline", {
@@ -63,8 +84,6 @@ $("#view").fracs("outline", {
 	diagonal: false,
 	viewportStyle: {
 		fillStyle: 'rgba(221,224,227,.8)'
-		// strokeWidth: 10,
-		// strokeStyle: 'black'
 	},
 	viewportDragStyle: {
 		fillStyle: 'rgba(221,224,227,0.8)'

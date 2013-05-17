@@ -65,6 +65,7 @@ function cache_text_files() {
 
 // Fetch images from GitHub and cache them
 function cache_images($images) {
+	var_dump($images);
   rrmdir(__DIR__ . '/img');
   mkdir(__DIR__ . '/img');
   foreach($images as $id => $image) {
