@@ -29,8 +29,8 @@ function drawtree() {
 	jsPlumb.connect({ source:"v0_7", target:"v0_8"});
 	jsPlumb.connect({ source:"v0_8", target:"v0_8_1"});
 	jsPlumb.connect({ source:"v0_8_1", target:"v0_8_c", anchors: connectR});
-	jsPlumb.connect({ source:"v0_8_1", target:"v0_9",});
-	jsPlumb.connect({ source:"v0_9", target:"v0_9_i", anchors: connectR});
+	// jsPlumb.connect({ source:"v0_8_1", target:"v0_9",});
+	// jsPlumb.connect({ source:"v0_9", target:"v0_9_i", anchors: connectR});
 }
 
 jsPlumb.bind("ready", function() {
@@ -59,26 +59,24 @@ $window.resize($.throttle(10, function(){
 
 $("#view").fracs("outline", {
 	crop: true,
+	invertViewport: true,
+	diagonal: false,
 	viewportStyle: {
-		fillStyle: 'rgba(255,250,0,0.2)'
+		fillStyle: 'rgba(221,224,227,.8)'
 		// strokeWidth: 10,
 		// strokeStyle: 'black'
 	},
 	viewportDragStyle: {
-		fillStyle: 'rgba(255,255,0,0.3)'
+		fillStyle: 'rgba(221,224,227,0.8)'
 	},
 	styles: [
 		{
 			selector: '.vbox',
-			fillStyle: 'rgba(0,0,0,0.3)'
+			fillStyle: 'rgba(0,0,0,0.8)',
 		},
-		// {
-		// 	selector: '._jsPlumb_connector ',
-		// 	fillStyle: 'rgb(0,0,0)'
-		// },
 		{
-			selector: '.textbox',
-			fillStyle: 'rgb(290,290,290)'
+			selector: '._jsPlumb_connector',
+			fillStyle: 'rgba(0,0,0,0)',
 		}
 	]
 });

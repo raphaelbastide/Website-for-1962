@@ -11,8 +11,10 @@ function post_receive($encoded_json) {
 }
 
 function cache_all() {
-  $branch = json_decode(file_get_contents('https://api.github.com/repos/'.GITHUB_USER.'/'.GITHUB_REPO.'/git/trees/'.GITHUB_BRANCH.'?recursive=1'));
-  $tree = $branch->tree;
+	$context = stream_context_create(array('http' => array('header' => 'User-Agent: 1962 website')));
+	$url = 'https://api.github.com/repos/'.GITHUB_USER.'/'.GITHUB_REPO.'/git/trees/'.GITHUB_BRANCH.'?recursive=1';
+  $branch = json_decode(file_get_contents($url, FALSE, $context));
+	$tree = $branch->tree;
   $images = array_filter($tree, function($obj) {
     return $obj->type === 'blob' && preg_match('/^media\/archive\/[^(HD)]+/', $obj->path);
   });
@@ -63,6 +65,7 @@ function cache_text_files() {
 
 // Fetch images from GitHub and cache them
 function cache_images($images) {
+	var_dump($images);
   rrmdir(__DIR__ . '/img');
   mkdir(__DIR__ . '/img');
   foreach($images as $id => $image) {

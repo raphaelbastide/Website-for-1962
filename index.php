@@ -38,7 +38,7 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 	<div class="page-break"></div>
 	<div id="tree" class="contentbox">
 		<div class="inner">
-			<div class="vbox branch1" id="v0_9_i">
+			<!-- <div class="vbox branch1" id="v0_9_i">
 				<img width="200" title="1962 v0.9_i" alt="1962 v0.9_i" src="img/0_9_i.jpg" />
 				<ul class="caption">
 					<li class="version">version: 0.9_imal-2013</li>
@@ -54,7 +54,7 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 					<li class="date">date: 2013-01-26</li>
 					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.8">on GitHub</a></li>
 				</ul>
-			</div>
+			</div> -->
 			<div class="vbox branch1" id="v0_8_c">
 				<img width="200" title="1962 v0_8_c" alt="1962 v0_8_c" src="img/0_8_c.jpg" />
 				<p class="caption">v0.8.chaumont-2013<br/><a href="http://www.cig-chaumont.com/fr/cig/page/festival-international-de-laffiche-et-du-graphisme/expositions/panorama">coming soon</a></p>
