@@ -80,6 +80,9 @@ footer{
 	left:35%;
 	margin:0 0 -300px 0;
 }
+.vbox .visit a{
+	background:#FFFDD6;
+}
 ._jsPlumb_connector {
 	z-index:1;
 }
