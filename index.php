@@ -27,7 +27,7 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 			<h1>1962</h1>
 			<h2>Versioned physical sculptures</h2>
 			<nav role="navigation" class="menu">
-				<button class="textboxes">Text</button>
+				<button class="textboxes">About</button>
 			</nav>
 		</div>
 		<div id="viewbox">
