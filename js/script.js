@@ -28,7 +28,7 @@ function drawtree() {
 	jsPlumb.connect({ source:"v0_7", target:"v0_7_b", anchors: connectR});
 	jsPlumb.connect({ source:"v0_7", target:"v0_8"});
 	jsPlumb.connect({ source:"v0_8", target:"v0_8_1"});
-	jsPlumb.connect({ source:"v0_8_1", target:"v0_8_c", anchors: connectR});
+	jsPlumb.connect({ source:"v0_8_1", target:"v0_8_1_c", anchors: connectR});
 	// jsPlumb.connect({ source:"v0_8_1", target:"v0_9",});
 	// jsPlumb.connect({ source:"v0_9", target:"v0_9_i", anchors: connectR});
 }
@@ -38,7 +38,6 @@ jsPlumb.bind("ready", function() {
 });
 
 // Text boxes
-$('#textboxes').hide();
 $('nav button').click(function(e){
 	e.preventDefault();
 	var opener = $(this),

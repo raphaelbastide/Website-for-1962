@@ -20,7 +20,7 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 	<meta name="description" content="1962 is a group physical sculptures based on Git and initiated by Raphaël Bastide">
 	<link rel="stylesheet" media="all" href="css/main.css">
 	<link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
-	<link rel="shortcut icon" href="img/favicon.gif" type="image/x-icon" />
+	<link rel="shortcut icon" href="css/img/favicon.gif" type="image/x-icon" />
 	<link href="https://github.com/raphaelbastide/1962/commits/master.atom" rel="alternate" title="Recent commits for 1962" type="application/atom+xml" /><body>
 	<header>
 		<div class="titles">
@@ -55,9 +55,9 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.8">on GitHub</a></li>
 				</ul>
 			</div> -->
-			<div class="vbox branch1" id="v0_8_c">
-				<img width="200" title="1962 v0_8_c" alt="1962 v0_8_c" src="img/0_8_c.jpg" />
-				<p class="caption">v0.8.chaumont-2013<br/><a href="http://www.cig-chaumont.com/fr/cig/page/festival-international-de-laffiche-et-du-graphisme/expositions/panorama">coming soon</a></p>
+			<div class="vbox branch1" id="v0_8_1_c">
+				<img width="200" title="1962 v0_8_1_c" alt="1962 v0_8_1_c" src="img/0_8_1_c.jpg" />
+				<p class="caption">v0.8.1.chaumont-2013<br/><a href="http://www.cig-chaumont.com/fr/cig/page/festival-international-de-laffiche-et-du-graphisme/expositions/panorama">coming soon</a></p>
 			</div>
 			<div class="vbox" id="v0_8_1">
 				<img width="200" title="1962 v0_8_1" alt="1962 v0_8_1" src="img/0_8_1.jpg" />

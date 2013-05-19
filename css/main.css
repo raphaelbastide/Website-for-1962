@@ -45,6 +45,7 @@ body.textboxes{
 	margin:50px 0 0 200px;
 }
 #textboxes{
+	display:none;
 	position:fixed;
 	overflow-y:scroll;
 	padding:0px 0 0 200px;
@@ -56,7 +57,7 @@ body.textboxes{
 	z-index:3;
 	background:white;	
 }
-.textbox{
+div.textbox{
 	width:100%;
 	max-width:550px;
 }
@@ -70,7 +71,7 @@ footer{
 	display:block;
 	width:200px;
 	height:300px;
-	background:#DDE0E3;
+	background:#DDE0E3 url(img/wait.png) no-repeat center center;
 	font-family:"source_code_pro", courier new, monospace;
 	font-size:12px;
 	color:#777;
