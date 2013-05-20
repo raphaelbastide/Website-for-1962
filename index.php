@@ -46,15 +46,15 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.8_imal-2013">on GitHub</a></li>
 					<li class="visit">visit: <a href="http://raphaelbastide.com/revisables/">Révisable 1</a></li>
 				</ul>
-			</div>
+			</div> -->
 			<div class="vbox" id="v0_9">
 				<img width="200" title="1962 v0.9" alt="1962 v0.9" src="img/0_9.jpg" />
 				<ul class="caption">
 					<li class="version">version: 0.9</li>
-					<li class="date">date: 2013-01-26</li>
-					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.8">on GitHub</a></li>
+					<li class="date">date: 2013-05-20</li>
+					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.9">on GitHub</a></li>
 				</ul>
-			</div> -->
+			</div>
 			<div class="vbox branch1" id="v0_8_1_c">
 				<img width="200" title="1962 v0_8_1_c" alt="1962 v0_8_1_c" src="img/0_8_1_c.jpg" />
 				<p class="caption">v0.8.1.chaumont-2013<br/><a href="http://www.cig-chaumont.com/fr/cig/page/festival-international-de-laffiche-et-du-graphisme/expositions/panorama">coming soon</a></p>
