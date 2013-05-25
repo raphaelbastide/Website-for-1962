@@ -30,6 +30,7 @@ function drawtree() {
 	jsPlumb.connect({ source:"v0_8", target:"v0_8_1"});
 	jsPlumb.connect({ source:"v0_8_1", target:"v0_8_1_c", anchors: connectR});
 	jsPlumb.connect({ source:"v0_8_1", target:"v0_9",});
+	jsPlumb.connect({ source:"v0_9", target:"v0_9_2",});
 	// jsPlumb.connect({ source:"v0_9", target:"v0_9_i", anchors: connectR});
 }
 
@@ -59,7 +60,7 @@ $('.vbox img').click(function(e){
 	imgFrame = $('.frame');
 	imgFrame.css('z-index', '6');
 	bigImg.appendTo(imgFrame);
-	bigImg.html('<img width="auto" height="auto" src="'+ this.src +'" />');
+	bigImg.html('<img width="auto" height="auto" alt="'+ this.alt +'" title="'+ this.title +'" src="'+ this.src +'" />');
 	bigImg.show();
 	$window.resize();
 });

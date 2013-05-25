@@ -47,6 +47,14 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 					<li class="visit">visit: <a href="http://raphaelbastide.com/revisables/">Révisable 1</a></li>
 				</ul>
 			</div> -->
+			<div class="vbox" id="v0_9_2">
+				<img width="200" title="1962 v0.9.2" alt="1962 v0.9.2" src="img/0_9_2.jpg" />
+				<ul class="caption">
+					<li class="version">version: 0.9.2</li>
+					<li class="date">date: 2013-05-25</li>
+					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.9.2">on GitHub</a></li>
+				</ul>
+			</div>
 			<div class="vbox" id="v0_9">
 				<img width="200" title="1962 v0.9" alt="1962 v0.9" src="img/0_9.jpg" />
 				<ul class="caption">
