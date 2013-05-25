@@ -52,7 +52,7 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 				<ul class="caption">
 					<li class="version">version: 0.9.2</li>
 					<li class="date">date: 2013-05-25</li>
-					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.9.2">on GitHub</a></li>
+					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/blob/v0.9.2/PIECE">on GitHub</a></li>
 				</ul>
 			</div>
 			<div class="vbox" id="v0_9">
@@ -60,7 +60,7 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 				<ul class="caption">
 					<li class="version">version: 0.9</li>
 					<li class="date">date: 2013-05-20</li>
-					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.9">on GitHub</a></li>
+					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/blob/v0.9/PIECE">on GitHub</a></li>
 				</ul>
 			</div>
 			<div class="vbox branch1" id="v0_8_1_c">
@@ -72,7 +72,7 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 				<ul class="caption">
 					<li class="version">version: 0.8.1</li>
 					<li class="date">date: 2013-02-19</li>
-					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.8.1">on GitHub</a></li>
+					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/blob/v0.8.1/PIECE">on GitHub</a></li>
 				</ul>
 			</div>
 			<div class="vbox" id="v0_8">
@@ -80,7 +80,7 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 				<ul class="caption">
 					<li class="version">version: 0.8</li>
 					<li class="date">date: 2013-01-26</li>
-					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.8">on GitHub</a></li>
+					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/blob/v0.8/PIECE">on GitHub</a></li>
 				</ul>
 			</div>
 			<div class="vbox branch1" id="v0_7_b">
@@ -88,7 +88,7 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 				<ul class="caption">
 					<li class="version">version: v0.7.brussels-2013</li>
 					<li class="date">date: 2013-02-28</li>
-					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.7.brussels-2013">on GitHub</a></li>
+					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/blob/v0.7.brussels-2013/PIECE">on GitHub</a></li>
 					<li class="visit">visit: <a href="http://raphaelbastide.com/branch/">BRANCH</a></li>
 				</ul>
 			</div>
@@ -97,7 +97,7 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 				<ul class="caption">
 					<li class="version">version: 0.7</li>
 					<li class="date">date: 2012-08-08</li>
-					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.7">on GitHub</a></li>
+					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/blob/v0.7/PIECE">on GitHub</a></li>
 				</ul>
 			</div>
 			<div class="vbox" id="v0_6">
@@ -105,7 +105,7 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 				<ul class="caption">
 					<li class="version">version: 0.6</li>
 					<li class="date">date: 2012-07-12</li>
-					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.6">on GitHub</a></li>
+					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/blob/v0.6/PIECE">on GitHub</a></li>
 				</ul>
 			</div>
 			<div class="vbox" id="v0_5">
@@ -113,7 +113,7 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 				<ul class="caption">
 					<li class="version">version: 0.5</li>
 					<li class="date">date: 2012-07-03</li>
-					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.5">on GitHub</a></li>
+					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/blob/v0.5/PIECE">on GitHub</a></li>
 				</ul>
 			</div>
 			<div class="vbox" id="v0_4">
@@ -121,7 +121,7 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 				<ul class="caption">
 					<li class="version">version: 0.4</li>
 					<li class="date">date: 2012-06-08</li>
-					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.4">on GitHub</a></li>
+					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/blob/v0.4/PIECE">on GitHub</a></li>
 				</ul>
 			</div>
 			<div class="vbox" id="v0_3">
@@ -129,7 +129,7 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 				<ul class="caption">
 					<li class="version">version: 0.3</li>
 					<li class="date">date: 2012-05-24</li>
-					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.3">on GitHub</a></li>
+					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/blob/v0.3/PIECE">on GitHub</a></li>
 				</ul>
 			</div>
 			<div class="vbox" id="v0_2">
@@ -137,7 +137,7 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 				<ul class="caption">
 					<li class="version">version: 0.2</li>
 					<li class="date">date: 2012-05-18</li>
-					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/tree/0.2">on GitHub</a></li>
+					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/blob/0.2/PIECE">on GitHub</a></li>
 				</ul>
 			</div>
 			<div class="vbox" id="v0_1">
@@ -145,7 +145,7 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 				<ul class="caption">
 					<li class="version">version: 0.1</li>
 					<li class="date">date: 2012-04-17</li>
-					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.1">on GitHub</a></li>
+					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/blob/v0.1/PIECE">on GitHub</a></li>
 				</ul>
 			</div>
 		</div>
