@@ -31,6 +31,7 @@ function drawtree() {
 	jsPlumb.connect({ source:"v0_8_1", target:"v0_8_1_c", anchors: connectR});
 	jsPlumb.connect({ source:"v0_8_1", target:"v0_9",});
 	jsPlumb.connect({ source:"v0_9", target:"v0_9_2",});
+	jsPlumb.connect({ source:"v0_9_2", target:"v0_9_3",});
 	// jsPlumb.connect({ source:"v0_9", target:"v0_9_i", anchors: connectR});
 }
 
