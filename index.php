@@ -72,8 +72,12 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 				</ul>
 			</div>
 			<div class="vbox branch1" id="v0_8_1_c">
-				<img width="200" title="1962 v0_8_1_c" alt="1962 v0_8_1_c" src="css/img/coming-soon.png" />
-				<p class="caption">v0.8.1.chaumont-2013<br/><a href="http://www.cig-chaumont.com/fr/cig/page/festival-international-de-laffiche-et-du-graphisme/expositions/panorama">coming soon</a></p>
+				<img width="200" title="1962 v0_8_1_c" alt="1962 v0_8_1_c" src="img/0_8_1-chaumont2013.jpg" />
+				<ul class="caption">
+					<li class="version">version: 0.8.1-chaumont2013</li>
+					<li class="date">date: 2013-05-20</li>
+					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/blob/v0.8.1.brussels-2013/PIECE">on GitHub</a></li>
+				</ul>
 			</div>
 			<div class="vbox" id="v0_8_1">
 				<img width="200" title="1962 v0_8_1" alt="1962 v0_8_1" src="img/0_8_1.jpg" />
