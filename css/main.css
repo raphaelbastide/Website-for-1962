@@ -32,15 +32,6 @@ body.textboxes #viewbox, body.textboxes #tree{
 body.textboxes{
 	overflow-y:hidden;
 }
-.caption{
-	font-family:"source_code_pro", courier new, monospace;
-	font-size:13px;
-	list-style-type:none;
-	line-height:16px;
-	margin:10px 0 0 0;
-	padding:7px 9px 12px 9px;
-	border:1px solid black;
-}
 #tree{
 	margin:50px 0 0 200px;
 }
@@ -77,6 +68,14 @@ footer{
 	font-size:12px;
 	color:#777;
 }
+/* Revisable 1 special image format */
+#v0_9_r.vbox{
+    width:300px;
+}
+#v0_9_r.vbox img{
+    width:300px;
+    height:225px;
+}
 .vbox.branch1{
 	position:relative;
 	left:35%;
@@ -85,6 +84,16 @@ footer{
 .vbox .visit a{
 	background:#FFFDD6;
 }
+.caption{
+	font-family:"source_code_pro", courier new, monospace;
+	font-size:13px;
+	list-style-type:none;
+	line-height:16px;
+	margin:10px 0 0 0;
+	padding:7px 9px 12px 9px;
+	border:1px solid black;
+}
+
 ._jsPlumb_connector {
 	z-index:1;
 }

@@ -21,7 +21,9 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 	<link rel="stylesheet" media="all" href="css/main.css">
 	<link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
 	<link rel="shortcut icon" href="css/img/favicon.gif" type="image/x-icon" />
-	<link href="https://github.com/raphaelbastide/1962/commits/master.atom" rel="alternate" title="Recent commits for 1962" type="application/atom+xml" /><body>
+	<link href="https://github.com/raphaelbastide/1962/commits/master.atom" rel="alternate" title="Recent commits for 1962" type="application/atom+xml" />
+</head>
+	<body>
 	<header>
 		<div class="titles">
 			<h1>1962</h1>
@@ -38,15 +40,6 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 	<div class="page-break"></div>
 	<div id="tree" class="contentbox">
 		<div class="inner">
-			<!-- <div class="vbox branch1" id="v0_9_i">
-				<img width="200" title="1962 v0.9_i" alt="1962 v0.9_i" src="img/0_9_i.jpg" />
-				<ul class="caption">
-					<li class="version">version: 0.9_imal-2013</li>
-					<li class="date">date: 2013-01-26</li>
-					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/tree/v0.8_imal-2013">on GitHub</a></li>
-					<li class="visit">visit: <a href="http://raphaelbastide.com/revisables/">Révisable 1</a></li>
-				</ul>
-			</div> -->
 			<div class="vbox" id="v0_9_3">
 				<img width="200" title="1962 v0.9.3" alt="1962 v0.9.3" src="img/0_9_3.jpg" />
 				<ul class="caption">
@@ -63,6 +56,15 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/blob/v0.9.2/PIECE">on GitHub</a></li>
 				</ul>
 			</div>
+			<div class="vbox branch1" id="v0_9_r">
+				<img width="300" title="1962 v0.9.Revisable-1" alt="1962 v0.9.Revisable-1" src="img/0_9_revisable-1.jpg" />
+				<ul class="caption">
+					<li class="version">version: v0.9.Revisable-1</li>
+					<li class="date">date: 2013-05-6</li>
+					<li class="code">code: <a href="https://github.com/imalorg/revisable-1">on GitHub</a></li>
+					<li class="visit">visit: <a href="http://raphaelbastide.com/revisables/">Révisable 1</a></li>
+				</ul>
+			</div>
 			<div class="vbox" id="v0_9">
 				<img width="200" title="1962 v0.9" alt="1962 v0.9" src="img/0_9.jpg" />
 				<ul class="caption">
@@ -74,7 +76,7 @@ $contributors = file_get_contents(__DIR__ . '/cache/CONTRIBUTORS');
 			<div class="vbox branch1" id="v0_8_1_c">
 				<img width="200" title="1962 v0_8_1_c" alt="1962 v0_8_1_c" src="img/0_8_1_chaumont-2013.jpg" />
 				<ul class="caption">
-					<li class="version">version: 0.8.1-chaumont2013</li>
+					<li class="version">version: 0.8.1.chaumont-2013</li>
 					<li class="date">date: 2013-05-20</li>
 					<li class="code">code: <a href="https://github.com/raphaelbastide/1962/blob/v0.8.1.brussels-2013/PIECE">on GitHub</a></li>
 				</ul>
